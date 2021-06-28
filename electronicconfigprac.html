@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/home.css">
+
+  <link rel="stylesheet" href="CSS/headingperiodic.css">
+
+  <link rel="stylesheet" href="CSS/electronic.css">
+  <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- dependancies -->
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+  </script>
+  <!-- jquery -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ravi+Prakash&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/gif" href="https://media4.giphy.com/media/ZwhahnPKqOe9hb2O5K/source.gif">
+  <script src="JS/jquery.js"></script>
+  <script src="JS/electronprac.js"></script>
+  <title>ChemiGuide</title>
+</head>
+<style>
+  .card {
+    height: inherit;
+  }
+
+  .form-control {
+    font-size: 1.8rem;
+    height: 3rem;
+  }
+
+  body {
+    background-image: linear-gradient(to left, rgb(154 255 165 / 0%), rgb(138 219 223));
+
+  }
+  
+</style>
+
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <img src="https://media4.giphy.com/media/ZwhahnPKqOe9hb2O5K/source.gif" style="width: 48px; height: 42px;"
+            alt="" srcset="">
+          <a class="navbar-brand" href="home.html" style="margin-left: 5px;">ChemiGuide</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="periodictable.html">Periodic Table</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link active" href="#">Elements</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">Trending News</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="left-container">
+      <div class="left-heading">
+        <h1 style="font-family: 'Playfair Display';"><span class="badge badge-warning"
+            style="font-size:1.65rem">Practise Filling Electrons Level Wise</span></h1>
+      </div>
+
+
+      <div class="sidebar">
+
+        <div id="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0 d-inline">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Level 1
+                </button>
+              </h5>
+              
+                
+              
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body" id="child1">
+                <!-- <div class="card">
+                          <div class="card-header">
+                            <h2 class="mb-0"><button class="btn bg-success">Practice</button><button class="my-button btn btn-link"
+                              type="button" data-toggle="collapse" data-target="#collapseOneA" id="1"
+                              aria-controls="collapse2">Hydrogen</button></h2>
+                          </div>
+                          <div class="card-body collapse" data-parent="#child1" id="collapseOne1">
+                            <p id="right-ele-name" class="Hydrogen"> Get To Know More about this atom by Filling the Electrons in the
+                              shells Click on practice button to Get started</p>
+                          </div>
+                      </div>
+                    -->
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p1">Practice</button><button
+                          class="my-button btn btn btn-link collapsed" type="button" data-toggle="collapse" id="1"
+                          aria-controls="#collapse1" data-target="#collapse1" aria-expanded="true">Hydrogen</button>
+                      </h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse1" style="">
+                      <p id="right-ele-name" class="Hydrogen">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p2">Practice</button><button
+                          class="my-button btn btn btn-link collapsed" type="button" data-toggle="collapse" id="2"
+                          aria-controls="#collapse2" data-target="#collapse2" aria-expanded="false">Helium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse2" style="">
+                      <p id="right-ele-name" class="Helium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p3">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="3"
+                          aria-controls="#collapse3" data-target="#collapse3">Lithium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse3">
+                      <p id="right-ele-name" class="Lithium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p4">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="4"
+                          aria-controls="#collapse4" data-target="#collapse4">Beryllium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse4">
+                      <p id="right-ele-name" class="Beryllium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p5">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="5"
+                          aria-controls="#collapse5" data-target="#collapse5">Boron</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse5">
+                      <p id="right-ele-name" class="Boron">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p6">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="6"
+                          aria-controls="#collapse6" data-target="#collapse6">Carbon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse6">
+                      <p id="right-ele-name" class="Carbon">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p7">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="7"
+                          aria-controls="#collapse7" data-target="#collapse7">Nitrogen</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse7">
+                      <p id="right-ele-name" class="Nitrogen">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p8">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="8"
+                          aria-controls="#collapse8" data-target="#collapse8">Oxygen</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse8">
+                      <p id="right-ele-name" class="Oxygen">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p9">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="9"
+                          aria-controls="#collapse9" data-target="#collapse9">Fluorine</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse9">
+                      <p id="right-ele-name" class="Fluorine">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p10">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="10"
+                          aria-controls="#collapse10" data-target="#collapse10">Neon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse10">
+                      <p id="right-ele-name" class="Neon">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p11">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="11"
+                          aria-controls="#collapse11" data-target="#collapse11">Sodium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse11">
+                      <p id="right-ele-name" class="Sodium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p12">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="12"
+                          aria-controls="#collapse12" data-target="#collapse12">Magnesium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse12">
+                      <p id="right-ele-name" class="Magnesium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p13">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="13"
+                          aria-controls="#collapse13" data-target="#collapse13">Aluminium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse13">
+                      <p id="right-ele-name" class="Aluminium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p14">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="14"
+                          aria-controls="#collapse14" data-target="#collapse14">Silicon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse14">
+                      <p id="right-ele-name" class="Silicon">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p15">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="15"
+                          aria-controls="#collapse15" data-target="#collapse15">Phosphorus</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse15">
+                      <p id="right-ele-name" class="Phosphorus">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p16">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="16"
+                          aria-controls="#collapse16" data-target="#collapse16">Sulfur</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse16">
+                      <p id="right-ele-name" class="Sulfur">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p17">Practice</button><button
+                          class="my-button btn btn btn-link collapsed" type="button" data-toggle="collapse" id="17"
+                          aria-controls="#collapse17" data-target="#collapse17" aria-expanded="false">Chlorine</button>
+                      </h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse17" style="">
+                      <p id="right-ele-name" class="Chlorine">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p18">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="18"
+                          aria-controls="#collapse18" data-target="#collapse18">Argon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse18">
+                      <p id="right-ele-name" class="Argon">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p19">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="19"
+                          aria-controls="#collapse19" data-target="#collapse19">Potassium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse19">
+                      <p id="right-ele-name" class="Potassium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p20">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="20"
+                          aria-controls="#collapse20" data-target="#collapse20">Calcium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse20">
+                      <p id="right-ele-name" class="Calcium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0 d-inline">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                  aria-controls="collapseTwo" id="levelED2">
+                  Level 2
+                </button>
+              </h5>
+              <!-- <a href="#" data-target="[data-parent='#child2']" data-toggle="collapse" class="my-2 float-right"></a> -->
+              <img class="float-right" id="lock2" src="./img/lock.png"  style="max-width:8.36%" />
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body" id="child2">
+                <!-- <div class="card">
+                          <div class="card-header">
+                            <h2 class="mb-0"><button class="btn bg-success">Practice</button><button class="my-button btn btn-link"
+                              type="button" data-toggle="collapse" data-target="#collapseOneA" id="1"
+                              aria-controls="collapse2">Hydrogen</button></h2>
+                          </div>
+                          <div class="card-body collapse" data-parent="#child1" id="collapseOne1">
+                            <p id="right-ele-name" class="Hydrogen"> Get To Know More about this atom by Filling the Electrons in the
+                              shells Click on practice button to Get started</p>
+                          </div>
+                      </div>
+                    -->
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p21">Practice</button><button
+                          class="my-button btn btn btn-link collapsed" type="button" data-toggle="collapse" id="21"
+                          aria-controls="#collapse21" data-target="#collapse21" aria-expanded="false">Scandium</button>
+                      </h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse21" style="">
+                      <p id="right-ele-name" class="Scandium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p22">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="22"
+                          aria-controls="#collapse22" data-target="#collapse22">Titanium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse22">
+                      <p id="right-ele-name" class="Titanium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p23">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="23"
+                          aria-controls="#collapse23" data-target="#collapse23">Vanadium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse23">
+                      <p id="right-ele-name" class="Vanadium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p24">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="24"
+                          aria-controls="#collapse24" data-target="#collapse24">Chromium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse24">
+                      <p id="right-ele-name" class="Chromium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p25">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="25"
+                          aria-controls="#collapse25" data-target="#collapse25">Manganese</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse25">
+                      <p id="right-ele-name" class="Manganese">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p26">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="26"
+                          aria-controls="#collapse26" data-target="#collapse26">Iron</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse26">
+                      <p id="right-ele-name" class="Iron">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p27">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="27"
+                          aria-controls="#collapse27" data-target="#collapse27">Cobalt</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse27">
+                      <p id="right-ele-name" class="Cobalt">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p28">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="28"
+                          aria-controls="#collapse28" data-target="#collapse28">Nickel</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse28">
+                      <p id="right-ele-name" class="Nickel">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p29">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="29"
+                          aria-controls="#collapse29" data-target="#collapse29">Copper</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse29">
+                      <p id="right-ele-name" class="Copper">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p30">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="30"
+                          aria-controls="#collapse30" data-target="#collapse30">Zinc</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse30">
+                      <p id="right-ele-name" class="Zinc">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p31">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="31"
+                          aria-controls="#collapse31" data-target="#collapse31">Gallium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse31">
+                      <p id="right-ele-name" class="Gallium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p32">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="32"
+                          aria-controls="#collapse32" data-target="#collapse32">Germanium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse32">
+                      <p id="right-ele-name" class="Germanium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p33">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="33"
+                          aria-controls="#collapse33" data-target="#collapse33">Arsenic</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse33">
+                      <p id="right-ele-name" class="Arsenic">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p34">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="34"
+                          aria-controls="#collapse34" data-target="#collapse34">Selenium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse34">
+                      <p id="right-ele-name" class="Selenium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p35">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="35"
+                          aria-controls="#collapse35" data-target="#collapse35">Bromine</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse35">
+                      <p id="right-ele-name" class="Bromine">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p36">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="36"
+                          aria-controls="#collapse36" data-target="#collapse36">Krypton</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse36">
+                      <p id="right-ele-name" class="Krypton">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p37">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="37"
+                          aria-controls="#collapse37" data-target="#collapse37">Rubidium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse37">
+                      <p id="right-ele-name" class="Rubidium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p38">Practice</button><button
+                          class="my-button btn btn btn-link collapsed" type="button" data-toggle="collapse" id="38"
+                          aria-controls="#collapse38" data-target="#collapse38" aria-expanded="false">Strontium</button>
+                      </h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse38" style="">
+                      <p id="right-ele-name" class="Strontium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p39">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="39"
+                          aria-controls="#collapse39" data-target="#collapse39">Yttrium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse39">
+                      <p id="right-ele-name" class="Yttrium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p40">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="40"
+                          aria-controls="#collapse40" data-target="#collapse40">Zirconium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse40">
+                      <p id="right-ele-name" class="Zirconium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0 d-inline">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                  aria-controls="collapseThree" id="levelED3">
+                  Level 3
+                </button>
+              </h5>
+              <!-- <a href="#" data-target="[data-parent='#child1']" data-toggle="collapse" class="my-2 float-right"></a> -->
+              <img class="float-right" id="lock3" src="./img/lock.png"  style="max-width:8.36%" />
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body" id="child1">
+                <!-- <div class="card">
+                          <div class="card-header">
+                            <h2 class="mb-0"><button class="btn bg-success">Practice</button><button class="my-button btn btn-link"
+                              type="button" data-toggle="collapse" data-target="#collapseOneA" id="1"
+                              aria-controls="collapse2">Hydrogen</button></h2>
+                          </div>
+                          <div class="card-body collapse" data-parent="#child1" id="collapseOne1">
+                            <p id="right-ele-name" class="Hydrogen"> Get To Know More about this atom by Filling the Electrons in the
+                              shells Click on practice button to Get started</p>
+                          </div>
+                      </div>
+                    -->
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p41">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="41"
+                          aria-controls="#collapse41" data-target="#collapse41">Niobium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse41">
+                      <p id="right-ele-name" class="Niobium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p42">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="42"
+                          aria-controls="#collapse42" data-target="#collapse42">Molybdenum</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse42">
+                      <p id="right-ele-name" class="Molybdenum">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p43">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="43"
+                          aria-controls="#collapse43" data-target="#collapse43">Technetium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse43">
+                      <p id="right-ele-name" class="Technetium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p44">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="44"
+                          aria-controls="#collapse44" data-target="#collapse44">Ruthenium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse44">
+                      <p id="right-ele-name" class="Ruthenium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p45">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="45"
+                          aria-controls="#collapse45" data-target="#collapse45">Rhodium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse45">
+                      <p id="right-ele-name" class="Rhodium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p46">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="46"
+                          aria-controls="#collapse46" data-target="#collapse46">Palladium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse46">
+                      <p id="right-ele-name" class="Palladium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p47">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="47"
+                          aria-controls="#collapse47" data-target="#collapse47">Silver</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse47">
+                      <p id="right-ele-name" class="Silver">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p48">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="48"
+                          aria-controls="#collapse48" data-target="#collapse48">Cadmium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse48">
+                      <p id="right-ele-name" class="Cadmium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p49">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="49"
+                          aria-controls="#collapse49" data-target="#collapse49">Indium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse49">
+                      <p id="right-ele-name" class="Indium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p50">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="50"
+                          aria-controls="#collapse50" data-target="#collapse50">Tin</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse50">
+                      <p id="right-ele-name" class="Tin">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p51">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="51"
+                          aria-controls="#collapse51" data-target="#collapse51">Antimony</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse51">
+                      <p id="right-ele-name" class="Antimony">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p52">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="52"
+                          aria-controls="#collapse52" data-target="#collapse52">Tellurium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse52">
+                      <p id="right-ele-name" class="Tellurium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p53">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="53"
+                          aria-controls="#collapse53" data-target="#collapse53">Iodine</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse53">
+                      <p id="right-ele-name" class="Iodine">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p54">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="54"
+                          aria-controls="#collapse54" data-target="#collapse54">Xenon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse54">
+                      <p id="right-ele-name" class="Xenon">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p55">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="55"
+                          aria-controls="#collapse55" data-target="#collapse55">Cesium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse55">
+                      <p id="right-ele-name" class="Cesium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p56">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="56"
+                          aria-controls="#collapse56" data-target="#collapse56">Barium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse56">
+                      <p id="right-ele-name" class="Barium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p57">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="57"
+                          aria-controls="#collapse57" data-target="#collapse57">Lanthanum</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse57">
+                      <p id="right-ele-name" class="Lanthanum">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p58">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="58"
+                          aria-controls="#collapse58" data-target="#collapse58">Cerium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse58">
+                      <p id="right-ele-name" class="Cerium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p59">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="59"
+                          aria-controls="#collapse59" data-target="#collapse59">Praseodymium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse59">
+                      <p id="right-ele-name" class="Praseodymium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p60">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="60"
+                          aria-controls="#collapse60" data-target="#collapse60">Neodymium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse60">
+                      <p id="right-ele-name" class="Neodymium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p61">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="61"
+                          aria-controls="#collapse61" data-target="#collapse61">Promethium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse61">
+                      <p id="right-ele-name" class="Promethium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p62">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="62"
+                          aria-controls="#collapse62" data-target="#collapse62">Samarium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse62">
+                      <p id="right-ele-name" class="Samarium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p63">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="63"
+                          aria-controls="#collapse63" data-target="#collapse63">Europium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse63">
+                      <p id="right-ele-name" class="Europium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p64">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="64"
+                          aria-controls="#collapse64" data-target="#collapse64">Gadolinium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse64">
+                      <p id="right-ele-name" class="Gadolinium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p65">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="65"
+                          aria-controls="#collapse65" data-target="#collapse65">Terbium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse65">
+                      <p id="right-ele-name" class="Terbium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p66">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="66"
+                          aria-controls="#collapse66" data-target="#collapse66">Dysprosium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse66">
+                      <p id="right-ele-name" class="Dysprosium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p67">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="67"
+                          aria-controls="#collapse67" data-target="#collapse67">Holmium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse67">
+                      <p id="right-ele-name" class="Holmium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p68">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="68"
+                          aria-controls="#collapse68" data-target="#collapse68">Erbium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse68">
+                      <p id="right-ele-name" class="Erbium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p69">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="69"
+                          aria-controls="#collapse69" data-target="#collapse69">Thulium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse69">
+                      <p id="right-ele-name" class="Thulium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0 d-inline">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                  aria-controls="collapseFour" id="levelED4">
+                  Level 4
+                </button>
+              </h5>
+              <!-- <a href="#" data-target="[data-parent='#child4']" data-toggle="collapse" class="my-2 float-right"></a> -->
+              <img class="float-right" id="lock4" src="./img/lock.png"  style="max-width:8.36%" />
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body" id="child4">
+                <!-- <div class="card">
+                          <div class="card-header">
+                            <h2 class="mb-0"><button class="btn bg-success">Practice</button><button class="my-button btn btn-link"
+                              type="button" data-toggle="collapse" data-target="#collapseOneA" id="1"
+                              aria-controls="collapse2">Hydrogen</button></h2>
+                          </div>
+                          <div class="card-body collapse" data-parent="#child1" id="collapseOne1">
+                            <p id="right-ele-name" class="Hydrogen"> Get To Know More about this atom by Filling the Electrons in the
+                              shells Click on practice button to Get started</p>
+                          </div>
+                      </div>
+                    -->
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p70">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="70"
+                          aria-controls="#collapse70" data-target="#collapse70">Ytterbium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse70">
+                      <p id="right-ele-name" class="Ytterbium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p71">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="71"
+                          aria-controls="#collapse71" data-target="#collapse71">Lutetium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse71">
+                      <p id="right-ele-name" class="Lutetium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p72">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="72"
+                          aria-controls="#collapse72" data-target="#collapse72">Hafnium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse72">
+                      <p id="right-ele-name" class="Hafnium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p73">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="73"
+                          aria-controls="#collapse73" data-target="#collapse73">Tantalum</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse73">
+                      <p id="right-ele-name" class="Tantalum">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p74">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="74"
+                          aria-controls="#collapse74" data-target="#collapse74">Tungsten</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse74">
+                      <p id="right-ele-name" class="Tungsten">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p75">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="75"
+                          aria-controls="#collapse75" data-target="#collapse75">Rhenium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse75">
+                      <p id="right-ele-name" class="Rhenium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p76">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="76"
+                          aria-controls="#collapse76" data-target="#collapse76">Osmium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse76">
+                      <p id="right-ele-name" class="Osmium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p77">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="77"
+                          aria-controls="#collapse77" data-target="#collapse77">Iridium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse77">
+                      <p id="right-ele-name" class="Iridium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p78">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="78"
+                          aria-controls="#collapse78" data-target="#collapse78">Platinum</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse78">
+                      <p id="right-ele-name" class="Platinum">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p79">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="79"
+                          aria-controls="#collapse79" data-target="#collapse79">Gold</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse79">
+                      <p id="right-ele-name" class="Gold">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p80">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="80"
+                          aria-controls="#collapse80" data-target="#collapse80">Mercury</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse80">
+                      <p id="right-ele-name" class="Mercury">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0 d-inline">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true"
+                  aria-controls="collapseFive" id="levelED5">
+                  Level 5
+                </button>
+              </h5>
+              <!-- <a href="#" data-target="[data-parent='#child5']" data-toggle="collapse" class="my-2 float-right"></a> -->
+              <img class="float-right" id="lock5" src="./img/lock.png"  style="max-width:8.36%" />
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body" id="child5">
+                <!-- <div class="card">
+                          <div class="card-header">
+                            <h2 class="mb-0"><button class="btn bg-success">Practice</button><button class="my-button btn btn-link"
+                              type="button" data-toggle="collapse" data-target="#collapseOneA" id="1"
+                              aria-controls="collapse2">Hydrogen</button></h2>
+                          </div>
+                          <div class="card-body collapse" data-parent="#child1" id="collapseOne1">
+                            <p id="right-ele-name" class="Hydrogen"> Get To Know More about this atom by Filling the Electrons in the
+                              shells Click on practice button to Get started</p>
+                          </div>
+                      </div>
+                    -->
+                <div class="accordion" id="accordionExample">
+
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p81">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="81"
+                          aria-controls="#collapse81" data-target="#collapse81">Thallium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse81">
+                      <p id="right-ele-name" class="Thallium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p82">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="82"
+                          aria-controls="#collapse82" data-target="#collapse82">Lead</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse82">
+                      <p id="right-ele-name" class="Lead">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p83">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="83"
+                          aria-controls="#collapse83" data-target="#collapse83">Bismuth</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse83">
+                      <p id="right-ele-name" class="Bismuth">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p84">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="84"
+                          aria-controls="#collapse84" data-target="#collapse84">Polonium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse84">
+                      <p id="right-ele-name" class="Polonium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p85">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="85"
+                          aria-controls="#collapse85" data-target="#collapse85">Astatine</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse85">
+                      <p id="right-ele-name" class="Astatine">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p86">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="86"
+                          aria-controls="#collapse86" data-target="#collapse86">Radon</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse86">
+                      <p id="right-ele-name" class="Radon">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p87">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="87"
+                          aria-controls="#collapse87" data-target="#collapse87">Francium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse87">
+                      <p id="right-ele-name" class="Francium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p88">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="88"
+                          aria-controls="#collapse88" data-target="#collapse88">Radium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse88">
+                      <p id="right-ele-name" class="Radium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p89">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="89"
+                          aria-controls="#collapse89" data-target="#collapse89">Actinium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse89">
+                      <p id="right-ele-name" class="Actinium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p90">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="90"
+                          aria-controls="#collapse90" data-target="#collapse90">Thorium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse90">
+                      <p id="right-ele-name" class="Thorium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p91">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="91"
+                          aria-controls="#collapse91" data-target="#collapse91">Protactinium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse91">
+                      <p id="right-ele-name" class="Protactinium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p92">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="92"
+                          aria-controls="#collapse92" data-target="#collapse92">Uranium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse92">
+                      <p id="right-ele-name" class="Uranium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p93">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="93"
+                          aria-controls="#collapse93" data-target="#collapse93">Neptunium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse93">
+                      <p id="right-ele-name" class="Neptunium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p94">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="94"
+                          aria-controls="#collapse94" data-target="#collapse94">Plutonium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse94">
+                      <p id="right-ele-name" class="Plutonium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p95">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="95"
+                          aria-controls="#collapse95" data-target="#collapse95">Americium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse95">
+                      <p id="right-ele-name" class="Americium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p96">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="96"
+                          aria-controls="#collapse96" data-target="#collapse96">Curium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse96">
+                      <p id="right-ele-name" class="Curium">Get To Know More about this atom by Filling the Electrons in
+                        the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p97">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="97"
+                          aria-controls="#collapse97" data-target="#collapse97">Berkelium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse97">
+                      <p id="right-ele-name" class="Berkelium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p98">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="98"
+                          aria-controls="#collapse98" data-target="#collapse98">Californium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse98">
+                      <p id="right-ele-name" class="Californium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p99">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="99"
+                          aria-controls="#collapse99" data-target="#collapse99">Einsteinium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse99">
+                      <p id="right-ele-name" class="Einsteinium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p100">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="100"
+                          aria-controls="#collapse100" data-target="#collapse100">Fermium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse100">
+                      <p id="right-ele-name" class="Fermium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p101">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="101"
+                          aria-controls="#collapse101" data-target="#collapse101">Mendelevium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse101">
+                      <p id="right-ele-name" class="Mendelevium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p102">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="102"
+                          aria-controls="#collapse102" data-target="#collapse102">Nobelium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse102">
+                      <p id="right-ele-name" class="Nobelium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p103">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="103"
+                          aria-controls="#collapse103" data-target="#collapse103">Lawrencium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse103">
+                      <p id="right-ele-name" class="Lawrencium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p104">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="104"
+                          aria-controls="#collapse104" data-target="#collapse104">Rutherfordium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse104">
+                      <p id="right-ele-name" class="Rutherfordium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p105">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="105"
+                          aria-controls="#collapse105" data-target="#collapse105">Dubnium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse105">
+                      <p id="right-ele-name" class="Dubnium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p106">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="106"
+                          aria-controls="#collapse106" data-target="#collapse106">Seaborgium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse106">
+                      <p id="right-ele-name" class="Seaborgium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p107">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="107"
+                          aria-controls="#collapse107" data-target="#collapse107">Bohrium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse107">
+                      <p id="right-ele-name" class="Bohrium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p108">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="108"
+                          aria-controls="#collapse108" data-target="#collapse108">Hassium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse108">
+                      <p id="right-ele-name" class="Hassium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p109">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="109"
+                          aria-controls="#collapse109" data-target="#collapse109">Meitnerium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse109">
+                      <p id="right-ele-name" class="Meitnerium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p110">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="110"
+                          aria-controls="#collapse110" data-target="#collapse110">Darmstadtium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse110">
+                      <p id="right-ele-name" class="Darmstadtium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p111">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="111"
+                          aria-controls="#collapse111" data-target="#collapse111">Roentgenium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse111">
+                      <p id="right-ele-name" class="Roentgenium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p112">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="112"
+                          aria-controls="#collapse112" data-target="#collapse112">Copernicium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse112">
+                      <p id="right-ele-name" class="Copernicium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p113">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="113"
+                          aria-controls="#collapse113" data-target="#collapse113">Nihonium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse113">
+                      <p id="right-ele-name" class="Nihonium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p114">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="114"
+                          aria-controls="#collapse114" data-target="#collapse114">Flerovium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse114">
+                      <p id="right-ele-name" class="Flerovium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p115">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="115"
+                          aria-controls="#collapse115" data-target="#collapse115">Moscovium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse115">
+                      <p id="right-ele-name" class="Moscovium">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p116">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="116"
+                          aria-controls="#collapse116" data-target="#collapse116">Livermorium</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse116">
+                      <p id="right-ele-name" class="Livermorium">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p117">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="117"
+                          aria-controls="#collapse117" data-target="#collapse117">Tennessine</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse117">
+                      <p id="right-ele-name" class="Tennessine">Get To Know More about this atom by Filling the
+                        Electrons in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <h2 class="mb-0"><button class="btn bg-success" id="p118">Practice</button><button
+                          class="my-button btn btn btn-link" type="button" data-toggle="collapse" id="118"
+                          aria-controls="#collapse118" data-target="#collapse118">Oganesson</button></h2>
+                    </div>
+                    <div class="card-body collapse" data-parent="#accordionExample" id="collapse118">
+                      <p id="right-ele-name" class="Oganesson">Get To Know More about this atom by Filling the Electrons
+                        in the shells Click on practice button to Get started</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- <p>Atoms Current State : <br>
+          <span><i class="em em-slightly_smiling_face" aria-role="presentation"
+              aria-label="SLIGHTLY SMILING FACE"></i></span>
+        </p> -->
+
+      <!-- <div class="summary">
+          <img src="" alt="">
+        </div> -->
+    </div>
+    <div class="right-container">
+      <div id="main-heading" class="right-heading">
+
+      </div>
+
+      <div class="electron-diagram">
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-950 -844 1900 1660">
+          <g class="g">
+            <circle class="nucleus" r="130"></circle>
+            <text id="elementsym" class="font-fam" x="0" y="0" fill="#ffffff" alignment-baseline="middle"
+              dominant-baseline="middle" text-anchor="middle"></text>
+
+          </g>
+        </svg>
+        <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-950 -844 1900 1660" >
+          <g class="g">
+            <circle class="nucleus" r="130"></circle><text class="font-fam" x="0" y="0" fill="#ffffff"
+              alignment-baseline="middle" dominant-baseline="middle" text-anchor="middle">Og</text>
+            <g class="one" fill="currentColor">
+              <circle r="230" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-230" r="25"></circle>
+              <circle class="electron" cx="0" cy="230" r="25"></circle>
+            </g>
+            <g class="two" fill="currentColor">
+              <circle r="320" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-320" r="25"></circle>
+              <circle class="electron" cx="0" cy="320" r="25"></circle>
+              <circle class="electron" cx="-320" cy="0" r="25"></circle>
+              <circle class="electron" cx="320" cy="0" r="25"></circle>
+              <circle class="electron" cx="-226.272" cy="-226.272" r="25"></circle>
+              <circle class="electron" cx="226.272" cy="-226.272" r="25"></circle>
+              <circle class="electron" cx="-226.272" cy="226.272" r="25"></circle>
+              <circle class="electron" cx="226.272" cy="226.272" r="25"></circle>
+            </g>
+            <g class="three" fill="currentColor">
+              <circle r="410" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-410" r="25"></circle>
+              <circle class="electron" cx="0" cy="410" r="25"></circle>
+              <circle class="electron" cx="-403.77117873000003" cy="-71.19575298" r="25"></circle>
+              <circle class="electron" cx="403.77117873000003" cy="-71.19575298" r="25"></circle>
+              <circle class="electron" cx="-355.07041399999997" cy="205" r="25"></circle>
+              <circle class="electron" cx="355.07041399999997" cy="205" r="25"></circle>
+              <circle class="electron" cx="-263.542916" cy="-314.07822163" r="25"></circle>
+              <circle class="electron" cx="263.542916" cy="-314.07822163" r="25"></circle>
+              <circle class="electron" cx="-263.542916" cy="314.07822163" r="25"></circle>
+              <circle class="electron" cx="263.542916" cy="314.07822163" r="25"></circle>
+              <circle class="electron" cx="-355.07041399999997" cy="-205" r="25"></circle>
+              <circle class="electron" cx="355.07041399999997" cy="-205" r="25"></circle>
+              <circle class="electron" cx="-403.77117873000003" cy="71.19575298" r="25"></circle>
+              <circle class="electron" cx="403.77117873000003" cy="71.19575298" r="25"></circle>
+              <circle class="electron" cx="-140.2282" cy="-385.2739742" r="25"></circle>
+              <circle class="electron" cx="140.2282" cy="-385.2739742" r="25"></circle>
+              <circle class="electron" cx="-140.2282" cy="385.2739742" r="25"></circle>
+              <circle class="electron" cx="140.2282" cy="385.2739742" r="25"></circle>
+            </g>
+            <g class="four" fill="currentColor">
+              <circle r="500" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-500" r="25"></circle>
+              <circle class="electron" cx="0" cy="500" r="25"></circle>
+              <circle class="electron" cx="-500" cy="0" r="25"></circle>
+              <circle class="electron" cx="500" cy="0" r="25"></circle>
+              <circle class="electron" cx="-353.54999999999995" cy="-353.54999999999995" r="25"></circle>
+              <circle class="electron" cx="353.54999999999995" cy="-353.54999999999995" r="25"></circle>
+              <circle class="electron" cx="-353.54999999999995" cy="353.54999999999995" r="25"></circle>
+              <circle class="electron" cx="353.54999999999995" cy="353.54999999999995" r="25"></circle>
+              <circle class="electron" cx="-461.93976625564335" cy="-191.3417161825449" r="25"></circle>
+              <circle class="electron" cx="461.93976625564335" cy="-191.3417161825449" r="25"></circle>
+              <circle class="electron" cx="461.93976625564335" cy="191.3417161825449" r="25"></circle>
+              <circle class="electron" cx="-461.93976625564335" cy="191.3417161825449" r="25"></circle>
+              <circle class="electron" cx="-191.3417161825449" cy="-461.93976625564335" r="25"></circle>
+              <circle class="electron" cx="191.3417161825449" cy="-461.93976625564335" r="25"></circle>
+
+              <circle class="electron" cx="-191.3417161825449" cy="461.93976625564335" r="25"></circle>
+              <circle class="electron" cx="191.3417161825449" cy="461.93976625564335" r="25"></circle>
+              <circle class="electron" cx="-490.3926402016152" cy="-97.54516100806414" r="25"></circle>
+              <circle class="electron" cx="490.3926402016152" cy="-97.54516100806414" r="25"></circle>
+              <circle class="electron" cx="-97.54516100806414" cy="490.3926402016152" r="25"></circle>
+              <circle class="electron" cx="415.7348061512726" cy="277.78511650980107" r="25"></circle>
+              <circle class="electron" cx="-97.54516100806414" cy="-490.3926402016152" r="25"></circle>
+              <circle class="electron" cx="277.78511650980107" cy="-415.7348061512726" r="25"></circle>
+              <circle class="electron" cx="-415.7348061512726" cy="277.78511650980107" r="25"></circle>
+              <circle class="electron" cx="-277.78511650980107" cy="-415.7348061512726" r="25"></circle>
+
+              <circle class="electron" cx="97.54516100806414" cy="490.3926402016152" r="25"></circle>
+              <circle class="electron" cx="-490.3926402016152" cy="97.54516100806414" r="25"></circle>
+              <circle class="electron" cx="490.3926402016152" cy="97.54516100806414" r="25"></circle>
+              <circle class="electron" cx="97.54516100806414" cy="-490.3926402016152" r="25"></circle>
+              <circle class="electron" cx="-415.7348061512726" cy="-277.78511650980107" r="25"></circle>
+              <circle class="electron" cx="277.78511650980107" cy="415.7348061512726" r="25"></circle>
+              <circle class="electron" cx="415.7348061512726" cy="-277.78511650980107" r="25"></circle>
+              <circle class="electron" cx="-277.78511650980107" cy="415.7348061512726" r="25"></circle>
+            </g>
+            <g class="five" fill="currentColor">
+              <circle r="590" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-590" r="25"></circle>
+              <circle class="electron" cx="0" cy="590" r="25"></circle>
+              <circle class="electron" cx="-590" cy="0" r="25"></circle>
+              <circle class="electron" cx="590" cy="0" r="25"></circle>
+              <circle class="electron" cx="-417.18899999999996" cy="-417.18899999999996" r="25"></circle>
+              <circle class="electron" cx="417.18899999999996" cy="-417.18899999999996" r="25"></circle>
+              <circle class="electron" cx="-417.18899999999996" cy="417.18899999999996" r="25"></circle>
+              <circle class="electron" cx="417.18899999999996" cy="417.18899999999996" r="25"></circle>
+              <circle class="electron" cx="-545.0889241816592" cy="-225.78322509540297" r="25"></circle>
+              <circle class="electron" cx="545.0889241816592" cy="-225.78322509540297" r="25"></circle>
+              <circle class="electron" cx="545.0889241816592" cy="225.78322509540297" r="25"></circle>
+              <circle class="electron" cx="-545.0889241816592" cy="225.78322509540297" r="25"></circle>
+              <circle class="electron" cx="-225.78322509540297" cy="-545.0889241816592" r="25"></circle>
+              <circle class="electron" cx="225.78322509540297" cy="-545.0889241816592" r="25"></circle>
+              <circle class="electron" cx="-225.78322509540297" cy="545.0889241816592" r="25"></circle>
+              <circle class="electron" cx="225.78322509540297" cy="545.0889241816592" r="25"></circle>
+              
+              <circle class="electron" cx="-578.6633154379059" cy="-115.10328998951569" r="25"></circle>
+              <circle class="electron" cx="578.6633154379059" cy="-115.10328998951569" r="25"></circle>
+              <circle class="electron" cx="-115.10328998951569" cy="578.6633154379059" r="25"></circle>
+              <circle class="electron" cx="490.5670712585017" cy="327.78643748156526" r="25"></circle>
+              <circle class="electron" cx="-115.10328998951569" cy="-578.6633154379059" r="25"></circle>
+              <circle class="electron" cx="327.78643748156526" cy="-490.5670712585017" r="25"></circle>
+              <circle class="electron" cx="-490.5670712585017" cy="327.78643748156526" r="25"></circle>
+              <circle class="electron" cx="-327.78643748156526" cy="-490.5670712585017" r="25"></circle>
+              <circle class="electron" cx="115.10328998951569" cy="578.6633154379059" r="25"></circle>
+              <circle class="electron" cx="-578.6633154379059" cy="115.10328998951569" r="25"></circle>
+              <circle class="electron" cx="578.6633154379059" cy="115.10328998951569" r="25"></circle>
+              <circle class="electron" cx="115.10328998951569" cy="-578.6633154379059" r="25"></circle>
+              <circle class="electron" cx="-490.5670712585017" cy="-327.78643748156526" r="25"></circle>
+              <circle class="electron" cx="327.78643748156526" cy="490.5670712585017" r="25"></circle>
+              <circle class="electron" cx="490.5670712585017" cy="-327.78643748156526" r="25"></circle>
+              <circle class="electron" cx="-327.78643748156526" cy="490.5670712585017" r="25"></circle>
+            </g>
+            <g class="six" fill="currentColor">
+              <circle r="680" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-680" r="25"></circle>
+              <circle class="electron" cx="0" cy="680" r="25"></circle>
+              <circle class="electron" cx="-669.66927204" cy="-118.08076103999998" r="25"></circle>
+              <circle class="electron" cx="669.66927204" cy="-118.08076103999998" r="25"></circle>
+              <circle class="electron" cx="-588.8972719999999" cy="340" r="25"></circle>
+              <circle class="electron" cx="588.8972719999999" cy="340" r="25"></circle>
+              <circle class="electron" cx="-437.095568" cy="-520.9102212399999" r="25"></circle>
+              <circle class="electron" cx="437.095568" cy="-520.9102212399999" r="25"></circle>
+              <circle class="electron" cx="-437.095568" cy="520.9102212399999" r="25"></circle>
+              <circle class="electron" cx="437.095568" cy="520.9102212399999" r="25"></circle>
+              <circle class="electron" cx="-588.8972719999999" cy="-340" r="25"></circle>
+              <circle class="electron" cx="588.8972719999999" cy="-340" r="25"></circle>
+              <circle class="electron" cx="-669.66927204" cy="118.08076103999998" r="25"></circle>
+              <circle class="electron" cx="669.66927204" cy="118.08076103999998" r="25"></circle>
+              <circle class="electron" cx="-232.5736" cy="-638.9909815999999" r="25"></circle>
+              <circle class="electron" cx="232.5736" cy="-638.9909815999999" r="25"></circle>
+              <circle class="electron" cx="-232.5736" cy="638.9909815999999" r="25"></circle>
+              <circle class="electron" cx="232.5736" cy="638.9909815999999" r="25"></circle>
+            </g>
+            <g class="seven" fill="currentColor">
+              <circle r="770" fill="none" stroke="currentColor" stroke-width="8"></circle>
+              <circle class="electron" cx="0" cy="-770" r="25"></circle>
+              <circle class="electron" cx="0" cy="770" r="25"></circle>
+              <circle class="electron" cx="-770" cy="0" r="25"></circle>
+              <circle class="electron" cx="770" cy="0" r="25"></circle>
+              <circle class="electron" cx="-544.467" cy="-544.467" r="25"></circle>
+              <circle class="electron" cx="544.467" cy="-544.467" r="25"></circle>
+              <circle class="electron" cx="-544.467" cy="544.467" r="25"></circle>
+              <circle class="electron" cx="544.467" cy="544.467" r="25"></circle>
+            </g>
+          </g>
+        </svg> -->
+
+
+
+      </div>
+      <div id="inputelec" class="right-heading electron-fill" style="margin-top: 25px;">
+        <div class="datafill" style="display: inline-block;">
+
+          Enter the Electrons in Shell <span id="shellno"></span>:
+          <!-- <input id="enum" type="text" style="margin-top: 25px;"> -->
+          <div class="form-group">
+            <br>
+            <input id="enum" type="text" class="form-control" id="formGroupExampleInput">
+          </div>
+
+          <button id="filling" class="btn bg-primary" style="margin-top: 15px; margin-bottom: 15px;"> Fill these
+            electrons</button>
+        </div>
+
+      </div>
+      <div id="ec" class="right-heading electron-fill">
+        Now Try Filling the Electrons in Respective Orbitals for <span class="badge badge-info" id="nameofele"></span>
+        Atom :
+        <br> <span class="badge badge-danger">Red</span> will indicate incorrect electrons filled <br>
+        <span class="badge badge-success">Green</span> will indicate correct electrons filled <br>
+        <span id="half-ec"></span>
+        <div class="fill-ec" style="margin-top: 25px; ">
+          <span class="long-hand"></span>
+        </div>
+        <button id="filling-2" class="btn bg-warning" style="margin-top: 25px; margin-bottom: 25px;">Fill Up Electrons
+          In Oribitals</button>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

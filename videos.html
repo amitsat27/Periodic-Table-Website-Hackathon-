@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-color: blanchedalmond;
+            }
+            .video {
+                width: 90%;
+                height: 60vh;
+                margin: 2% 5%
+            }
+
+            .description {
+                width: 90%;
+                height: auto;
+                margin: 0 5%;
+                margin-top: 5%;
+            }
+
+            .playlist {
+                width: 90%;
+                height: 75vh;
+                margin: 0 5%;
+                margin-top: 10%;
+            }
+
+            @media screen and (max-width: 992px) {
+                .video, .description, .playlist {
+                    width: 98%;
+                    margin: 2% 1%;
+                }
+
+                .video {
+                    height: 45vh;
+                }
+            }   
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-fluid p-0">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                  <img src="https://media4.giphy.com/media/ZwhahnPKqOe9hb2O5K/source.gif" style="width: 48px; height: 42px;" alt="" srcset="">
+                  <a class="navbar-brand" href="home.html" style="margin-left: 5px;">ChemiGuide</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="periodictable.html">Periodic Table</a>
+                      </li>
+                   
+                      <li class="nav-item">
+                        <a class="nav-link active" href="news.html">Trending News</a>
+                      </li>
+                
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="description">
+                        <h5 id="title" class="card-title">Periodic Classification of Elements</h5>
+                    </div>
+                    <div class="video shadow">
+                        <iframe id="video" style="width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/tzXNS8TNLqk?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="playlist shadow overflow-auto" id="playList">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var playlist = {
+                'Periodic Classification of Elements' : 'tzXNS8TNLqk',
+              
+                'Mendeleev\'s Periodic Table' : 'fPnwBITSmgU',
+                'Modern Periodic Table' : 'U8q1JetNu_w',
+                'Properties of Matter':'P6DMEgE8CK8',
+                'Atomic Number' : 'D3GR6thtApI',
+                'Concept of Valency' : 'lVSF2lP4oBA',
+                'Dobereiner\'s Triads and Newland\'s Octaves' : 'EUyf17l2hmw',
+                'Physical Properties of Metals and Nonmetals' : 'AJbe5THaNuU',
+                'Periodic Table Crash Course':'0RRVV4Diomg',
+                
+            }
+
+            $(document).ready(function() {
+                
+                var imageItem = '<div class="media border p-3" style="cursor: pointer;"> <img id="'
+                var idImage =  '" class="rounded" src="https://img.youtube.com/vi/'
+                var bodyItem = '/default.jpg" > <div class="media-body"> <h4 class="mt-3 ml-3"><small>'
+                var titleItem = '</small></h4> </div> </div>'
+
+                for (title in playlist) {
+                    $('#playList').append(imageItem + playlist[title] + idImage + playlist[title] + bodyItem + title + titleItem);
+                }
+
+                $(".media").click(function() {
+                    var url = 'https://www.youtube-nocookie.com/embed/' + $(this).find("img").attr("id") + '?rel=0';
+                    var title = $(this).find("h4").text();
+                    $("#video").attr("src", url);
+                    $("#title").text(title);
+                });
+            });
+        </script>
+    </body>
+</html>

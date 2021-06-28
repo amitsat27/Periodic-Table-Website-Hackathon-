@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/home.css">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- jquery -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ravi+Prakash&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/gif" href="https://media4.giphy.com/media/ZwhahnPKqOe9hb2O5K/source.gif">
+  <script src="JS/jquery.js"></script>
+  <title>ChemiGuide|Home </title>
+</head>
+  <style>
+    #intButtons a{
+      text-decoration: none;
+      border-radius: 25px;
+      
+    }
+    #fill{
+      background-color:#FCD0AC;
+    }
+    #match{
+      background-color: #FFE5AA;
+    }
+    #nemo{
+      background-color:#e6f88e;
+    }
+    #tutorials{
+      background-color: #CBECFB;
+    }
+    #electronicconfig{
+      background-color: #AFFFB5;
+    }
+    #quiz-mod{
+      background-color: #dafff9;
+    }
+
+    /* explore button */
+  .button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 241, 163);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #ef86f3;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.button:hover {
+  color: rgb(0, 0, 0);
+}
+.button:hover:before {
+  width: 100%;
+}
+  </style>
+ 
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <img src="https://media4.giphy.com/media/ZwhahnPKqOe9hb2O5K/source.gif" style="width: 48px; height: 42px;" alt="" srcset="">
+          <a class="navbar-brand" href="home.html" style="margin-left: 5px;">ChemiGuide</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="periodictable.html">Periodic Table</a>
+              </li>
+           
+              <li class="nav-item">
+                <a class="nav-link active" href="news.html">Trending News</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container-fluid main">
+    <div class="left-container">
+      <h1> <span style="color: #25b4f7;">Chemi</span> <span style="color: #faa25a;">Guide</span> </h1>
+     <p>
+         Learn the Periodic Table of elements with games! 
+      </p>
+      
+      <p>
+        Looking to deepen your understanding of the Periodic Table? Try out some games and quizzes that will help you retain information about the Periodic Table and Element's attributes.
+      </p>
+      <!-- <div class="buttons-1">
+        <button id="fill" type="button" class="btn">Fill the Periodic Table</button>
+        <button id="tutorials" type="button" class="btn">Video Tutorials</button>
+        
+      </div>
+      <div class="buttons-2">
+        <button id="ptd" type="button" class="btn">Match the elements</button>
+        <button id="games" type="button" class="btn">Mneumonics Learning</button>
+        
+      </div> -->
+      <div class="container">
+        <div class="row" style="height: 14rem;">
+          <div class="col-sm">
+            <div class="w3-container">  
+
+            
+             
+
+                <button onclick="myFunction('intButtons')" class="w3-button w3-block w3-left-align button" style="margin-bottom: 17px;"> Start Exploring Interactive Elements</button>
+            
+             
+              <div id="intButtons" class="w3-hide w3-animate-right" >
+                <div class="row" style="margin-bottom: 3px;">
+                  <div class="col-sm">
+
+                    <a id="tutorials" href="#" class="w3-button w3-left-align" style="width: 48%; border-radius: 25px;">Tutorials</a>
+                    <a id="nemo" href="#" class="w3-button  w3-left-align" style="width: 51%;">Learn With Mneumonics</a>
+                  </div>
+
+                </div>
+                <div class="row" style="margin-bottom: 3px;">
+                  <div class="col-sm">
+
+                    <a id="match" href="#" class="w3-button w3-left-align" style="width: 48%;">Match Elements</a>
+                    <a id="fill" href="#" class="w3-button  w3-left-align" style="width: 51%;">Fill Periodic Table</a>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-sm">
+
+                    <a id="electronicconfig" href="#" class="w3-button w3-left-align" style="width: 48%;">Practice Electronic Configuration</a>
+                    <a id="quiz-mod" href="#" class="w3-button  w3-left-align" style="width: 51%;">Play A Quiz</a>
+                  </div>
+
+                </div>
+                </div>
+              </div>
+           
+          </div>
+      
+        
+        </div>
+      </div>
+      
+      <img src="img/fair.png" alt="" srcset="">
+      
+    </div>
+     
+    
+    <div class="right-container">
+      <p style="text-align: center;">Dig into the Universe of Chemical elements With Chemiguide</p>
+      <img src="img/mmain.png" alt="" srcset="">
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+<script>
+  function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+</html>
