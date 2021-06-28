@@ -1,0 +1,250 @@
+{ 
+  
+    "elements" :[ 
+    {
+      "question" : "The atomic number of an atom is the number of ______ in the atom's nucleus.",
+      "answers" : {
+        "a": "Electrons",
+        "b": "Neutrons",
+        "c": "Protons"
+      },
+      "correctAnswer": "c",
+      "explaination":"The number of protons are equal to atomic number."
+    },
+    {
+      "question": "The rows in Periodic Table are called __________.",
+      "answers": {
+        "a": "Periods",
+        "b": "Classes",
+        "c": "Chemicals",
+        "d": "Blocks"
+      },
+      "correctAnswer": "a",
+      "explaination":"Rows in periodic table are called periods and Columns are called groups."
+
+    },
+    {
+      "question" : "Which one of the following elements is very rare?",
+      "answers" : {
+        "a" : "Thorium",
+        "b" : "Uranium",
+        "c" : "Francium",
+        "d" : "Nihonium"
+      },
+      "correctAnswer" : "c",
+      "explaination":"Francium is rarest element."
+    },
+    {
+      "question" : "How many periods and groups are present in the periodic table?",
+      "answers" : {
+        "a" : "7 periods and 18 groups",
+        "b" : "8 periods and 7 groups",
+        "c" : "7 periods and 7 groups",
+        "d" : "8 periods and 8 groups"
+      },
+      "correctAnswer" : "a",
+      "explaination":"There are total 7 periods and 18 groups in periodic table."
+    },
+    {
+      "question": "Which of the following forms the basis of the modern periodic table?",
+      "answers" : {
+        "a" : "Atomic Number",
+        "b" : "Atomic Mass",
+        "c" : "Number of Nucleons",
+        "d" : "All of these"
+      },
+      "correctAnswer" : "a",
+      "explaination":"Atomic number of elements is considered to basis of modern periodic table."
+    },
+    {
+      "question" : "What happens to the electropositive character of elements on moving from left to right in a periodic table?",
+      "answers" : {
+        "a" : "Increases",
+        "b" : "Decreases",
+        "c" : "First increases then decreases",
+        "d" : "First decreases then increases"
+      },
+      "correctAnswer" : "b",
+      "explaination":"On moving from left to right in a period, the electropositive character decreases as the tendency to lose electrons decreases."
+    },
+    {
+      "question" : "What is the other name for group 18th elements?",
+      "answers" : {
+        "a" : "Noble Gases",
+        "b" : "Alkali Metals",
+        "c" : "Alkaline earth metals",
+        "d" : "Halogens"
+      },
+      "correctAnswer": "a",
+      "explaination":"Noble Gases is the other name for group 18th elements"
+    },
+    {
+      "question" : "Which of the following elements has 2 shells and both are completely filled?",
+      "answers": {
+        "a" : "Helium",
+        "b" : "Neon",
+        "c" : "Calcium",
+        "d" : "Boron"
+      },
+      "correctAnswer" : "b",
+      "explaination":"Neon has electronic configuration of 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup>"
+    },
+    {
+      "question" : "Which of the following statements are TRUE?",
+      "answers" : {
+        "a" : "The first 94 elements in Periodic Table occur naturally",
+        "b" : "Elements 95 to 118 have only been synthesized in laboratories or nuclear reactors",
+        "c" : "Alkali Metals occupy the left-most column of the Periodic Table",
+        "d" : "All are True"
+      },
+      "correctAnswer" : "d"
+    },
+    {
+      "question" : "Who proposed Law of Triads?",
+      "answers" : {
+        "a" : "Dobereiner",
+        "b" : "John Newlands",
+        "c" : "Lothan Grenger",
+        "d" : "Michal Philip Gardener"
+      },
+      "correctAnswer" : "a",
+      "explaination":"Dobereiner proposed law of triads"
+    },
+
+    {
+      "question" : "Which of the following represents the general electronic configuration of an element belonging to the p-block of the periodic table?",
+      "answers" : {
+        "a" : "(n-2)f0(n-1)d0ns2 np0 -6",
+        "b" : "(n-2)f0(n-1)d1 – 10 ns2 np1- 6",
+        "c" : "(n-2)f0(n-1)d0 ns2np1-6",
+        "d" : "(n-2)f1- 14(n-1)d1- 10ns2np1- 6"
+
+        
+      },
+      "correctAnswer" : "c",
+      "explaination":"The electrophilic substitution of arenes requires the presence of a Lewis acid catalyst which acts as a halogen carrier. NH3 is a Lewis base."
+    },
+    {
+      "question" :" What happens to the size of atoms of elements of p-block as we move from left to right in the same period?",
+      "answers" : {
+        "a" : "Size increases",
+        "b" : "Size decreases",
+        "c" : "Size does not change",
+        "d" : "Size increases then decreases"
+
+        
+      },
+      "correctAnswer" : "b",
+      "explaination":"The size of the atoms of the elements decrease from left to right in the same period. Considering the row to be the same, the electrons are added to the same shell. However, the increase in atomic number reflects the increase in number of protons i.e. the positive charge. Hence, the overall effective nuclear charge increases. Consequently, the electron cloud is pulled even more closer to the nucleus of the atom. Therefore, the size decreases."
+    },
+    {
+      "question" :" What is the maximum covalency of the nitrogen atom?",
+      "answers" : {
+        "a" : "One",
+        "b" : "Two",
+        "c" : "Three",
+        "d" : "Four"
+
+        
+      },
+      "correctAnswer" : "d",
+      "explaination":"Covalency of an atom refers to the number of electrons that atom can share to form chemical bonds. Usually it is the number of bonds formed by the atom. In case of nitrogen, its atom can share up to four electrons, one in the s-subshell and the other three in the p-subshell. In addition to this, absence of d-orbitals restricts its covalency to four only."
+    },
+    {
+      "question" :"Why does nitrogen show poor tendency towards catenation?",
+      "answers" : {
+        "a" : "N atom can form multiple pπ – pπ bonds",
+        "b" : "Octet of N2 is complete unlike carbon",
+        "c" : "The N ≡ N is unreactive at room temperature",
+        "d" : "The N – N single bond is weaker and unstable"
+
+        
+      },
+      "correctAnswer" : "d",
+      "explaination":"The N – N single bond is highly weak and unstable due to high magnitude of inter-electronic repulsions of non-bonding electrons which in turn is caused by the single bond’s small bond length. As a result the catenation tendency becomes weaker due to the mentioned factors leading to instability."
+    },
+    {
+      "question" :"What is the primary product of  Haber-Bosch process?",
+      "answers" : {
+        "a" : "Ammonia",
+        "b" : "Nitric acid",
+        "c" : "Nitrous acid",
+        "d" : "Pyridine"
+
+        
+      },
+      "correctAnswer" : "a",
+      "explaination":"The primary product of Haber-Bosch process is ammonia, NH3. In this process, N2(g) and H2(g) are reacted at a high temperature of 700 K and 200 atm pressure in presence of iron-bed catalysts. It is an exothermic process which takes place in accordance with Le Chatelier’s principle. Nitric acid is produced by Ostwald’s process. Nitrous acid is produced by reacting sodium nitrite with a mineral and pyridine by Chichibabin process."
+    },
+    {
+      "question" :"Which gas is released when copper chips are subjected to concentrated nitric acid?",
+      "answers" : {
+        "a" : "Nitrogen (I) oxide",
+        "b" : "Nitrogen (II) oxide",
+        "c" : "Nitrogen (III) oxide",
+        "d" : "Nitrogen (IV) oxide"
+
+        
+      },
+      "correctAnswer" : "d",
+      "explaination":"Treating copper chips with concentrated nitric acid releases toxic brown gas, NO2, nitrogen (IV) oxide. It is a reddish-brown gas with pungent odor."
+    },
+    {
+      "question" :"What shape is the HNO3 molecule in its gaseous state?",
+      "answers" : {
+        "a" : "Bent",
+        "b" : "Linear",
+        "c" : "Planar",
+        "d" : "See Saw"
+
+        
+      },
+      "correctAnswer" : "c",
+      "explaination":"In the gas state, the nitric acid molecule has a triangular planar shape with a steric number of 3 no lone pairs of electron. There are two major resonance forms of nitric acid."
+    },
+    {
+      "question" :"Which of the following ions is the brown ring test useful for determining?",
+      "answers" : {
+        "a" : "NO2–",
+        "b" : "NO2+",
+        "c" : "NO2",
+        "d" : " NO3–"
+
+        
+      },
+      "correctAnswer" : "d",
+      "explaination":"The brown ring test is used to determine the presence of nitrate ions, NO3–. Dilute ferrous sulfate solution is added to solution containing nitrate ion. Following this, concentrated sulfuric acid is added along the sides of the test tube. A brown ring is formed at the junction concentrated sulfuric acid and solutions."
+    },
+    {
+      "question" :"What catalyst is used for oxidation of ammonia to produce nitric acid?",
+      "answers" : {
+        "a" : "Palladium hydride",
+        "b" : "Sodium amalgam",
+        "c" : "Platinum-Rhodium gauze",
+        "d" : "Vanadium (V) oxide"
+
+        
+      },
+      "correctAnswer" : "c",
+      "explaination":"Ammonia is oxidized to nitrogen (II) oxide in the presence of Pt/Rh gauze catalyst at a temperature of 500 K and a pressure of 9 bars. The nitrous oxide is then converted to nitrogen dioxide which is further reacted with water to produce nitric acid. The NO formed is recycled."
+    },
+    {
+      "question" :"What is the oxidation state of nitrogen in di-nitrogen trioxide?",
+      "answers" : {
+        "a" : "+1",
+        "b" : "+2",
+        "c" : "+3",
+        "d" : "+4"
+
+        
+      },
+      "correctAnswer" : "c",
+      "explaination":"Di-nitrogen trioxide is formulated as N2O3The oxidation state of oxygen atom is fixed at -2 since it is the moreelectronegative atom in this case. If oxidation state of nitrogen is assumed to be 'x', then 2x + (3x -2) = 02x – 6 = 0x = ++The oxidation state of nitrogen is +3."
+    }
+
+
+
+
+
+    ]
+}

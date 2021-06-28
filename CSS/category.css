@@ -1,0 +1,509 @@
+
+  .periodic {
+    position: relative;
+    height: 200px;
+    margin-right: -1px;
+    text-shadow: none;
+  }
+  .periodic-row {
+    clear: both;
+    height: 10%;
+    /* border: 2px solid red; */
+    
+  }
+  .cell {
+    float: left;
+    position: relative;
+    width: 5.55%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 1px;
+    right: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    cursor: default;
+    pointer-events: none;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    background-color: rgba(0, 128, 128);
+    
+  }
+  .cell:hover .element {
+    border-color: rgba(0, 0, 0, 0.1);
+    -webkit-transform: scale(3, 3);
+    -ms-transform: scale(3, 3);
+    transform: scale(3, 3);
+    z-index: 1;
+    background-color: rgba(0, 128, 128, 0.9);
+  }
+  .at_num,
+  .at_details {
+    position: absolute;
+    font-size: 4px;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    font-weight: 600;
+  }
+  .at_num {
+    top: 4px;
+    right: 5px;
+  }
+  .symbol {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin-top: -4px;
+    font-size: 8px;
+    line-height: 1;
+    height: 9px;
+    color: black;
+  }
+  .at_details {
+    bottom: 4px;
+    left: 0px;
+    right: 0px;
+  }
+
+
+ 
+
+  .cell:nth-child(1) .element {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+  }
+  .cell:nth-child(18) .element {
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+  }
+  .periodic-row:nth-child(10) .cell .element {
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  .periodic-row:nth-child(1) .cell:nth-child(1) .element {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .periodic-row:nth-child(1) .cell:nth-child(18) .element {
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  .periodic-row:nth-child(10) .cell:nth-child(18) .element {
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+
+  /* category */
+  /* diatomic */
+  .periodic-row:nth-child(1) .cell:nth-child(1) .element,
+  .periodic-row:nth-child(2) .cell:nth-child(n+15):nth-child(-n+17) .element,
+  .periodic-row:nth-child(n+3):nth-child(-n+5) .cell:nth-child(17) .element
+  {
+    background-color: #FDC7FE;
+  }
+  
+  /* alkali metal */
+  .periodic-row:nth-child(n+2):nth-child(-n+7) .cell:nth-child(1) .element
+  {
+      background-color:#FCD0AC;
+  }
+/* alkaline earth metal */
+  .periodic-row:nth-child(n+2):nth-child(-n+7) .cell:nth-child(2) .element{
+    background-color: #FFE5AA;
+  }
+  /* noble gas */
+  .periodic-row:nth-child(n+1):nth-child(-n+6) .cell:nth-child(18) .element{
+    background-color: #CBECFB;
+  }
+/* metalloid */
+  .periodic-row:nth-child(2) .cell:nth-child(13) .element,
+  .periodic-row:nth-child(3) .cell:nth-child(14) .element,
+  .periodic-row:nth-child(4) .cell:nth-child(n+14):nth-child(-n+15) .element,
+  .periodic-row:nth-child(5) .cell:nth-child(n+15):nth-child(-n+16) .element,
+  .periodic-row:nth-child(6) .cell:nth-child(17) .element
+  {
+    background-color: #AFFFB5;
+  }
+  /* polyatomic nonmetal */
+  .periodic-row:nth-child(2) .cell:nth-child(14) .element,
+  .periodic-row:nth-child(3) .cell:nth-child(n+15):nth-child(-n+16) .element,
+  .periodic-row:nth-child(4) .cell:nth-child(16) .element{
+      background-color: #D0C1FF;
+  }
+  /*  transition metals */
+  .periodic-row:nth-child(n+4):nth-child(-n+5) .cell:nth-child(n+3):nth-child(-n+12) .element,
+  .periodic-row:nth-child(6) .cell:nth-child(n+4):nth-child(-n+12) .element,
+  .periodic-row:nth-child(7) .cell:nth-child(n+4):nth-child(-n+8) .element,
+  .periodic-row:nth-child(7) .cell:nth-child(12) .element
+  {
+      background-color: #FFFAA9;
+  }
+ /* post transition metals */
+  .periodic-row:nth-child(n+3):nth-child(-n+6) .cell:nth-child(13) .element,
+  .periodic-row:nth-child(n+5):nth-child(-n+7) .cell:nth-child(14) .element,
+  .periodic-row:nth-child(6) .cell:nth-child(n+15):nth-child(-n+16) .element
+  {
+      background-color:#e6f88e;
+  }
+/* lanthanides */
+  .periodic-row:nth-child(9) .cell:nth-child(n+3):nth-child(-n+18) .element
+  {
+    background-color: #DDFDAA;
+  }
+  /* actinides */
+  .periodic-row:nth-child(10) .cell:nth-child(n+3):nth-child(-n+18) .element
+  {
+    background-color: #b2f349;
+  }
+/* unknows elements */
+  .periodic-row:nth-child(7) .cell:nth-child(n+9):nth-child(-n+11) .element,
+  .periodic-row:nth-child(7) .cell:nth-child(13) .element,
+  .periodic-row:nth-child(7) .cell:nth-child(n+15):nth-child(-n+18) .element,
+  .periodic-row:nth-child(8) .cell:nth-child(1) .element
+  {
+    background-color: rgb(168, 168, 168);
+  }
+
+@media (min-width:500px){
+  .periodic{
+    height: 650px;
+  }
+  .eledes{
+    height:510px;
+  }
+  .element {
+    right: 2px;
+    bottom: 2px;
+    color:black;
+  }
+  .at_num,
+  .at_details {
+    font-size: 4px;
+    opacity: 1;
+    color: black;
+  }
+  .symbol {
+    margin-top: -17px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.75);
+   
+    /* text-shadow: 0 0 4px rgba(255, 255, 255, 0.5); */
+  }
+}
+
+
+  @media (min-width: 600px) {
+    .periodic {
+      height: 800px;
+      margin-right: -2px;
+    }
+    .eledes{
+      height:510px;
+    }
+    .element {
+      right: 2px;
+      bottom: 2px;
+      color:black;
+    }
+    .at_num,
+    .at_details {
+      font-size: 4px;
+      opacity: 1;
+      color: black;
+    }
+    .symbol {
+      margin-top: -17px;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 30px;
+      height: 30px;
+      color: rgba(0, 0, 0, 0.75);
+     
+      /* text-shadow: 0 0 4px rgba(255, 255, 255, 0.5); */
+    }
+   
+   
+  }
+  
+  @media (min-width: 800px) {
+    .periodic,.eledes {
+      height: 540px;
+    }
+    .symbol {
+      font-size: 20px;
+    }
+  }
+  @media (min-width: 992px) {
+    .periodic,.eledes {
+      height: 730px;
+    }
+    .at_num,
+    .at_details {
+      font-size: 23px;
+    }
+    
+  
+    .eledes{
+      height: 780px;
+    }
+    .at_num,
+    .at_details {
+      font-size: 6px;
+      color: black;
+    }
+    .symbol {
+      font-size: 30px;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    
+  
+  }
+  @media (min-height:1100px){
+    .periodic{
+      height: 700px;
+    }
+  }
+  
+  /* category buttons */
+  #mainques {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 25px;
+    color: #111;
+    /* border: 2px solid aqua; */
+
+  }
+  
+  #mainques-2 {
+    /* border: 2px solid aqua; */
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 25px;
+    color: #111;
+  
+  }
+  
+  @media (max-width:900px){
+    #cat-polymetal,#cat-postmetal,#cat-transmetal,#cat-lanthanide,#cat-actinide{
+      display: none;
+    }
+    
+  }
+  @media (min-width:900px){
+    #cat-polymetal-2,#cat-postmetal-2,#cat-transmetal-2,#cat-lanthanide-2,#cat-actinide-2{
+      display: none;
+    }
+    
+  }
+  #mainques button{
+    width: 150px;
+    height: 46px;
+    padding: 2px;
+    color: black;
+    border: 1px solid;
+    font-family: 'ubuntu';
+    font-size: 15px;
+  }
+  #mainques-2 button{
+    width: 150px;
+    height: 46px;
+    padding: 2px;
+    color: black;
+    border: 1px solid;
+    font-family: 'ubuntu';
+    font-size: 15px;
+  }
+  
+ 
+  /* MAIN SCREEN BUTTONS */
+  
+  .periodic-row .cell .element.cat-noble{
+    background-color: #000000;
+  }
+  #cat-diatomic{
+    
+    background-color: #FDC7FE;
+}
+
+#cat-diatomic:hover{
+    color:white;
+    background-color: #fc60ff;
+}
+
+#cat-noble{
+    background-color: #CBECFB;
+}
+#cat-noble:hover{
+  color: white;
+  background-color: #6dd0fd;
+
+}
+#cat-noble:hover .element.cat-noble{
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+}
+
+#cat-alkali{
+    background-color: #FCD0AC;
+}
+#cat-alkali:hover{
+    color: white;
+    background-color: #fca258;
+}
+
+#cat-alkaliem{
+    background-color: #FFE5AA;
+}
+#cat-alkaliem:hover{
+    color: white;
+    background-color: #ffd268;
+}
+
+#cat-metalloid{
+    color: white;
+    background-color: #AFFFB5;
+}
+#cat-metalloid:hover{
+    color: white;
+    background-color: #6ffc7b;
+}
+
+#cat-polymetal{
+    background-color: #D0C1FF;
+}
+#cat-polymetal:hover{
+    color: white;
+    background-color: #7d53fa;
+}
+
+#cat-postmetal{
+    background-color: #e6f88e;
+}
+
+#cat-postmetal:hover{
+    color: white;
+    background-color: #defa52;
+}
+
+#cat-transmetal{
+    background-color: #FFFAA9;
+}
+#cat-transmetal:hover{
+    color: white;
+    background-color: #fdf226;
+}
+
+#cat-lanthanide{
+    background-color: #DDFDAA;
+}
+#cat-lanthanide:hover{
+    color: white;
+    background-color: #b2f547;
+}
+
+#cat-actinide{
+    background-color: #b2f349;
+}
+#cat-actinide:hover{
+    color: white;
+    background-color: #9dff00;
+}
+
+
+/* BELOW BUTTON AFTER SCREEN SMALL */
+
+
+#cat-polymetal-2{
+  background-color: #D0C1FF;
+}
+#cat-polymetal-2:hover{
+  color: white;
+  background-color: #7d53fa;
+}
+
+#cat-postmetal-2{
+  background-color: #e6f88e;
+}
+
+#cat-postmetal-2:hover{
+  color: white;
+  background-color: #defa52;
+}
+
+#cat-transmetal-2{
+  background-color: #FFFAA9;
+}
+#cat-transmetal-2:hover{
+  color: white;
+  background-color: #fdf226;
+}
+
+#cat-lanthanide-2{
+  background-color: #DDFDAA;
+}
+#cat-lanthanide-2:hover{
+  color: white;
+  background-color: #b2f547;
+}
+
+#cat-actinide-2{
+  background-color: #b2f349;
+}
+#cat-actinide-2:hover{
+  color: white;
+  background-color: #9dff00;
+}
+
+
+
+/* groups and periods */
+
+/* hover categories */
+
+/* blockquote */
+
+.element.s-block{
+   background-color: rgb(243, 255, 138);
+
+  
+}
+.element.d-block{
+  background-color: rgb(145, 146, 245);
+
+ 
+}
+.element.p-block{
+  background-color: rgb(251, 184, 253);
+
+ 
+}
+.element.f-block{
+  background-color: rgb(238, 199, 93);
+
+ 
+}
+.element.s-block,.element.d-block,.element.f-block,.element.p-block{
+  
+}
+
+.at_details.block-details{
+  font-size: 10px;
+}

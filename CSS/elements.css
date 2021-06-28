@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid-container{
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(5, 1fr); }
+  }
+
+.btn.btn-success.back{
+
+    height: 46px;
+    width: 88px;
+ 
+    font-size: 25px;
+}
+
+.question .back{
+    float: left;
+    /* font-size: 65px; */
+}
+#forward{
+  float: right;
+}
+
+
+/* firstbox */
+.card {
+font-family: 'Ubuntu';
+    color: rgb(0, 0, 0);
+    
+    height: 22.5rem;
+    /* border: 2px solid rgb(226, 20, 195); */
+    display: grid;
+    border-radius: 25px;
+  
+ 
+    
+  
+  }
+
+  .card.first{
+    background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+  }
+
+  .card.third.general-props{
+    background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+  }
+  .card.third.atomic-props{
+    background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+  }
+  .card.third.physical-props{
+    background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+  }
+
+  .flip-box-inner{
+    background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+  }
+  .cards {
+      /* border: 2px solid red; */
+    max-width: 1700px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 8px;
+
+  }
+  p{
+    font-weight: 800;
+  }
+
+
+  /* media queries */
+  @media (min-width: 494px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+    .card.first {grid-template-columns: repeat(2, 2fr);}
+    .card.first .sname{font-size: 1.5rem;}
+    .card.first .name{font-size: 1.5rem;}
+    .card.first .atomicnum{font-size: 1.2rem;}
+    
+  }
+
+
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+    .card.first {grid-template-columns: repeat(2, 2fr);}
+    
+
+  }
+  @media (min-width: 700px) {
+    .cards { grid-template-columns: repeat(1, 1fr); }
+    .card.first {grid-template-columns: repeat(2, 2fr);}
+  }
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+    .card.first {grid-template-columns: repeat(2, 2fr);}
+    .card.first .sname{font-size: 2rem;}
+    .card.first .name{font-size: 2rem;}
+    .card.first .atomicnum{font-size: 1.5rem;}
+  }
+    /* first/ */
+   
+
+  .card.first .atnsym,.name,.group_periodic_block{
+
+    
+    /* border: 2px solid red; */
+  }
+
+  .card.first .group_periodic_block{
+      
+      grid-area: 1 / 2 / span 2 /span 1;
+  }
+ 
+  /* second */
+
+ 
+
+  .card.second .shell,.config,.diagram{
+
+    /* border: 2px solid red; */
+  }
+
+  .card.second .shell {
+     
+      height: 4rem;
+  }
+  .card.second .diagram {
+  
+    height: 14rem;
+}
+.card.second .config {
+    
+    height: 4rem;
+}
+
+.card.second p{
+ 
+    padding : 1.1rem;
+    font-size: 1.3rem;
+    
+}
+
+/* third */
+.card.third .gpheading,.gpcol1,.gpcol2{
+
+    /* border: 2px solid rgb(0, 255, 106); */
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .card.third .gpheading{ 
+  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    grid-area: 1 / 1 / span 1 /span 2;
+   
+}
+
+.card.third .gpcol1,.gpcol2{
+    
+    height: 18.25rem;
+}
+
+
+.card.third.general-props .gpcol1 p{
+  
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.card.third.general-props .gpcol2 p{
+ 
+    margin-top: 0.9rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.card.third.physical-props .gpcol1 p{
+    margin-top: 0.9rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.card.third.physical-props .gpcol2 p{
+    margin-top: 0.9rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.card.third.atomic-props .gpcol1 p{
+    margin-top: 0.9rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+.card.third.atomic-props .gpcol2 p{
+    margin-top: 0.9rem;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* atomicnumber */
+.atnsym{
+    display: grid;
+}
+
+.atnsym .atomicnum{
+    display: flex;
+    height: 1.5em;
+    align-items: center;
+    margin-left: 28px;
+    /* border: 2px solid rgb(238, 255, 0); */
+    font-size: 2rem;
+ 
+    
+}
+
+.atnsym .sname{
+    
+    display: flex;
+    align-items: center;
+    margin-top: -66px;
+    /* border: 2px solid rgb(17, 0, 255); */
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.gpheading{
+  font-weight: 600;
+}
+
+.group_periodic_block .gpheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.gennum{
+    margin-top:8px;
+    height: 20rem;
+    /* border: 3px solid rgb(255, 0, 157); */
+}
+
+.gennum  p{
+    padding : 0.2rem;
+    font-size: 1.2rem;
+}
+
+/* sixth  box */
+
+.summary{
+  font-size:100px;
+}
+
+
+/* flipping */
+.card.flipping {
+    background-color: transparent;
+    
+    /* border: 1px solid #fd0000; */
+    perspective: 1000px; 
+    
+  }
+  
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 25px;
+  }
+  
+
+  .flipping:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    border-radius: 25px;
+  }
+  
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    
+  }
+  
+
+  .flip-box-front {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    color: black;
+  }
+
+  .flip-box-back {
+    color: rgb(0, 0, 0);
+    
+    transform: rotateY(180deg);
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+  img{
+      max-width: 100%;
+      max-height: 100%;
+ 
+  }
+
+
+
+
+
+p:hover {
+  transform: scale3d(1, 1, 1);
+  z-index: 1;
+  border-width: 1px !important;
+  background: rgb(98, 189, 241);
+  box-shadow: 0 40px 120px -20px rgba(110, 245, 162, 0.6);
+  border-radius: 2px;
+}
+
+
+.group_periodic_block.gpheading{
+  background-image: linear-gradient(to left bottom, #6beddb, #80efc7, #98efb3, #b3eea0, #cfeb90);
+}
+
+
+
+

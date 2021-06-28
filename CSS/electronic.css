@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+.main{
+    display: flex;
+    border: none;
+    /* border: 3px solid rgb(0, 0, 0); */
+  }
+
+  
+  .left-container{
+    display: block;
+    background-image: none;
+    border: none;
+    width: 33%;
+  }
+  .right-container{
+    display: block;
+    background: none;
+    width: 67%;
+    border: none;
+  }
+
+  .left-heading{
+    height: 5.2rem;
+    
+      text-align: center;
+      font-size: 2rem;
+      /* border: 2px solid hotpink; */
+      font-family: 'Playfair Display', serif;
+      background-color: #f6f6f6;
+      text-align: center;
+    
+     
+  }
+  .right-heading{
+    text-align: center;
+    font-size: 25px;
+    /* border: 2px solid hotpink; */
+    font-family: 'Playfair Display', serif;
+    
+}
+
+/* fillelectronic config */
+.fill-ec{
+  /* border: 2px solid tomato; */
+
+ 
+    margin: auto;
+    height: 5rem;
+    width: 23rem;
+    padding: 0.6rem;
+}
+
+
+#ec{
+  font-size: 1.4rem;
+}
+
+[class*='filling-sup-']{
+  font-size: 1.2rem;
+    height: 1.8rem;
+    width: 1.5rem;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+#orbital-fill{
+  width: 1.3rem;
+}
+
+
+.long-hand{
+  font-size: 1.6rem;
+}
+
+
+
+
+  .left-container p{
+      /* border: 2px solid  darkolivegreen; */
+      margin: 25px;
+   
+  }
+
+
+
+/* nucleus */
+  .electron-diagram{
+      /* border: 2px solid yellow; */
+  }
+ 
+  svg{
+   
+    width: 30%;
+    /* border: 2px solid red; */
+    position: relative;
+    left: 34%;
+
+    
+  }
+
+  .font-fam{
+      font-size: 5.6rem;
+  }
+
+ 
+
+  /* centernucleus */
+  .nucleus{
+      fill:rgb(135, 146, 153);
+      font-weight: 1000;
+  }
+
+  .one {
+	animation: rotate 10s infinite linear
+}
+.one {
+	animation: rotate 10s infinite linear
+}
+
+.two {
+	animation: rotate 12s infinite linear
+}
+
+.three {
+	animation: rotate 14.4s infinite linear
+}
+
+.four {
+	animation: rotate 17.28s infinite linear
+}
+
+.five {
+	animation: rotate 20.74s infinite linear
+}
+
+.six {
+	animation: rotate 24.88s infinite linear
+}
+
+.seven {
+	animation: rotate 29.86s infinite linear
+}
+
+.electron {
+	transition: all .1s ease-in-out
+}
+  
+@keyframes rotate {
+	0% {
+		transform: rotate(0)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+#elementsym{
+  font-weight: 600;
+}
+
+
+/* navigation */
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn{
+    color: azure;
+}
+
+/* sidebar */
+
+.sidebar{
+  /* border: 2px solid rgb(76, 0, 255); */
+  overflow-y: scroll;
+  max-height: calc(100vh - 9rem);
+}
+.btn.btn-link{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  font-size: 25px;
+}
+
+
+

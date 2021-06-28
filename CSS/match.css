@@ -1,0 +1,91 @@
+body{
+    background-color: whitesmoke;
+}
+#target{
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    color: brown;
+    font-weight: bolder;
+}
+#source{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    bottom: 10%;
+    right: 10%;
+}
+#root{
+    background-color: white;
+    margin-top: 11%;
+    margin-left: 20%;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+}
+#available_elements , #available_slots{
+    background-color: rgb(255, 255, 204);
+    margin: auto;
+    margin-top: 30px;
+    width: 80%;
+    height: 40%;
+    border-style: none;
+    border-radius: 15px;
+}
+#available_elements  div , #available_slots div{
+    background-color: rgb(255, 77, 77);
+    margin-left: 4%;
+    margin-top: 8%;
+    text-align: left;
+    position: relative;
+    float: left;
+    height: 40%;
+    width: 10%;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#available_slots div.hovered{
+    background-color: teal;
+}
+#available_elements div.ui-draggable-dragging {
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+#info_try_1{
+    position: fixed;
+    top: 10%;
+}
+#info_try_2{
+    position: fixed;
+    top: 10%;
+    left: 40%;
+}
+#close_1{
+    position: absolute;
+    top: 0%;
+    right: 35%;
+}
+#available_elements div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: darkgrey;
+    top: 120px;
+    right: 100px;
+    height: 30px;
+    width: 100px;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
